@@ -1,28 +1,6 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+COMS W3101
+Lucy He (lh2574)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+For my project, I'd like to create a platform for students living in the same dorm to make online purchases together, in order to meet online shopping minimums. I have often found myself filling up an online shopping cart, or ordering too much take-out when I only intended to buy a few items. If students are slightly flexible in when they order items or food, they can combine their purchases with others to save on shipping! Intended for students to use with others living in the same dorm, the service is meant to be as convenient as possible for the users.
