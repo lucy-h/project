@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  skip_before_filter :require_user, :only => [:new, :create]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -27,7 +28,9 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     respond_to do |format|
-      if @user.save
+      if @user.save and session[:user_id] == nil
+        format.html { redirect_to login_path, notice: 'User was successfully created.' }
+      elsif @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
@@ -54,10 +57,17 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    @user.destroy
-    respond_to do |format|
-      format.html { redirect_to users_url }
-      format.json { head :no_content }
+    if session[:user_id] == @user.id
+      @user.destroy
+      respond_to do |format|
+        format.html { redirect_to logout_path, notice: "You have deleted your account and successfully logged out."}
+      end
+    else
+      @user.destroy
+      respond_to do |format|
+        format.html { redirect_to users_url }
+        format.json { head :no_content }
+      end
     end
   end
 
