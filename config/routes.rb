@@ -1,4 +1,10 @@
 Project::Application.routes.draw do
+  resources :items
+
+  resources :stores
+
+  resources :wishlists
+
   resources :courses
 
   resources :users

@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  want_by: 2014-02-24
+  total_cost: 1.5
+
+two:
+  want_by: 2014-02-24
+  total_cost: 1.5

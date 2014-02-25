@@ -4,3 +4,38 @@ COMS W3101
 Lucy He (lh2574)
 
 For my project, I'd like to create a platform for students living in the same dorm to make online purchases together, in order to meet online shopping minimums. I have often found myself filling up an online shopping cart, or ordering too much take-out when I only intended to buy a few items. If students are slightly flexible in when they order items or food, they can combine their purchases with others to save on shipping! Intended for students to use with others living in the same dorm, the service is meant to be as convenient as possible for the users.
+
+Models
+
+1) User
+Attributes
+first_name:string
+last_name:string
+password:string
+uni:string
+building:string
+has_many :wishlists
+
+2) Wishlist
+Attributes
+want_by:date
+total_cost:float
+has_many :items
+has_one :store
+belongs_to :user
+
+3) Store
+Attributes
+name:string
+url:string
+shipping_minimum:float
+
+4) Item
+Attributes
+name:string
+url:string
+price:float
+has_one: store
+
+
+

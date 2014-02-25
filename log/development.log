@@ -14206,3 +14206,2032 @@ BCrypt::Errors::InvalidHash (invalid hash):
   Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
   Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
   Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 22ms (Views: 21.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:27 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aYPe2u9hqJO5YyWjwhcxyiyE4mxAhA0fMvOIwVtcqOg=", "session"=>{"email"=>"ldh"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"ldh"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5250ms
+Redirected to http://localhost:3000/login
+Completed 302 Found in 37ms
+
+
+Started GET "/login" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 8.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:29 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-17 23:53:31 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aYPe2u9hqJO5YyWjwhcxyiyE4mxAhA0fMvOIwVtcqOg=", "session"=>{"email"=>"lucyhe"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5410ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"lucyhe"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7060ms
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 4ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6790ms
+  Rendered courses/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 52ms (Views: 11.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:32 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8540ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5650ms
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 15ms (Views: 12.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:35 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.7ms)
+  Rendered users/new.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 52ms (Views: 51.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:40 -0500
+
+
+Started POST "/users" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aYPe2u9hqJO5YyWjwhcxyiyE4mxAhA0fMvOIwVtcqOg=", "user"=>{"first_name"=>"l", "last_name"=>"h", "email"=>"lerh"}, "commit"=>"Create User"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7090ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=users documents=[{"_id"=>BSON::ObjectId('5302e75864796e0d93030000'), "first_name"=>"l", "last_name"=>"h", "email"=>"lerh"}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.6420ms
+Redirected to http://localhost:3000/users/5302e75864796e0d93030000
+Completed 302 Found in 8ms
+
+
+Started GET "/users/5302e75864796e0d93030000" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5302e75864796e0d93030000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5600ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e75864796e0d93030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5060ms
+  Rendered users/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 31.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:44 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-17 23:53:45 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7110ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5970ms
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 20ms (Views: 14.5ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 8.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:48 -0500
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-02-17 23:53:49 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.2ms)
+  Rendered users/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 15ms (Views: 13.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aYPe2u9hqJO5YyWjwhcxyiyE4mxAhA0fMvOIwVtcqOg=", "user"=>{"first_name"=>"u", "last_name"=>"y", "email"=>"hi"}, "commit"=>"Create User"}
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=users documents=[{"_id"=>BSON::ObjectId('5302e76064796e0d93040000'), "first_name"=>"u", "last_name"=>"y", "email"=>"hi"}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.7730ms
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms
+
+
+Started GET "/login" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 9ms (Views: 8.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:52 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aYPe2u9hqJO5YyWjwhcxyiyE4mxAhA0fMvOIwVtcqOg=", "session"=>{"email"=>"hi"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"hi"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8260ms
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 3ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e76064796e0d93040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7190ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6080ms
+  Rendered courses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 13ms (Views: 10.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:55 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (4.2ms)
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 14ms (Views: 13.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:53:57 -0500
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e76064796e0d93040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8330ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8580ms
+  Rendered users/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 16ms (Views: 13.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:00 -0500
+
+
+Started DELETE "/users/5302e76064796e0d93040000" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aYPe2u9hqJO5YyWjwhcxyiyE4mxAhA0fMvOIwVtcqOg=", "id"=>"5302e76064796e0d93040000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5430ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e76064796e0d93040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6770ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e76064796e0d93040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5420ms
+  MOPED: 127.0.0.1:27017 DELETE       database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e76064796e0d93040000')} flags=[:remove_first]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.8990ms
+Redirected to http://localhost:3000/logout
+Completed 302 Found in 8ms
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 10.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:02 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aYPe2u9hqJO5YyWjwhcxyiyE4mxAhA0fMvOIwVtcqOg=", "session"=>{"email"=>"lucyhe"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"lucyhe"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 1.0980ms
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 4ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7430ms
+  Rendered courses/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 13ms (Views: 9.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:04 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-02-17 23:54:10 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.0ms)
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 12ms (Views: 10.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:10 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-17 23:54:11 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+Processing by UsersController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 36ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (97.1ms)
+Completed 200 OK in 286ms (Views: 285.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-18 00:01:25 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-18 00:01:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-18 00:01:26 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-18 00:01:30 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "session"=>{"email"=>"lucyhe"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 15.0510ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"lucyhe"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8660ms
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 185ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-18 00:01:30 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7610ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9200ms
+  Rendered courses/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 36ms (Views: 11.7ms)
+
+
+Started DELETE "/courses/5302dd4864796e0cad050000" for 127.0.0.1 at 2014-02-18 00:01:33 -0500
+Processing by CoursesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "id"=>"5302dd4864796e0cad050000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6580ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={"_id"=>BSON::ObjectId('5302dd4864796e0cad050000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6690ms
+  MOPED: 127.0.0.1:27017 DELETE       database=project_development collection=courses selector={"_id"=>BSON::ObjectId('5302dd4864796e0cad050000')} flags=[:remove_first]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.7670ms
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 7ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-18 00:01:33 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6070ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5790ms
+  Rendered courses/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 14ms (Views: 10.8ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-02-18 00:01:37 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (61.7ms)
+  Rendered users/new.html.erb within layouts/application (189.5ms)
+Completed 200 OK in 223ms (Views: 222.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-02-18 00:01:41 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "user"=>{"first_name"=>"Jenny", "last_name"=>"H", "email"=>"jennyh"}, "commit"=>"Create User"}
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=users documents=[{"_id"=>BSON::ObjectId('5302e93564796e0e20000000'), "first_name"=>"Jenny", "last_name"=>"H", "email"=>"jennyh"}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 1.1380ms
+Redirected to http://localhost:3000/users/5302e93564796e0e20000000
+Completed 302 Found in 5ms
+
+
+Started GET "/users/5302e93564796e0e20000000" for 127.0.0.1 at 2014-02-18 00:01:41 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5302e93564796e0e20000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8930ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e93564796e0e20000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5950ms
+  Rendered users/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 76ms (Views: 72.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-18 00:01:44 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6530ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 2.7980ms
+  Rendered users/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 43ms (Views: 40.6ms)
+
+
+Started DELETE "/users/5302e75864796e0d93030000" for 127.0.0.1 at 2014-02-18 00:01:46 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "id"=>"5302e75864796e0d93030000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5760ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e75864796e0d93030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4490ms
+  MOPED: 127.0.0.1:27017 DELETE       database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e75864796e0d93030000')} flags=[:remove_first]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.7430ms
+Redirected to http://localhost:3000/users
+Completed 302 Found in 6ms
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-18 00:01:46 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6960ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9310ms
+  Rendered users/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 29ms (Views: 25.7ms)
+
+
+Started DELETE "/users/5302e4db64796e0d93020000" for 127.0.0.1 at 2014-02-18 00:01:47 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "id"=>"5302e4db64796e0d93020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e4db64796e0d93020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7360ms
+  MOPED: 127.0.0.1:27017 DELETE       database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e4db64796e0d93020000')} flags=[:remove_first]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.9560ms
+Redirected to http://localhost:3000/users
+Completed 302 Found in 7ms
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-18 00:01:47 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7910ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7310ms
+  Rendered users/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 18ms (Views: 14.7ms)
+
+
+Started DELETE "/users/5302e93564796e0e20000000" for 127.0.0.1 at 2014-02-18 00:01:49 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "id"=>"5302e93564796e0e20000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6310ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e93564796e0e20000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4280ms
+  MOPED: 127.0.0.1:27017 DELETE       database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e93564796e0e20000000')} flags=[:remove_first]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 1.0610ms
+Redirected to http://localhost:3000/users
+Completed 302 Found in 7ms
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-18 00:01:49 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8530ms
+  Rendered users/index.html.erb within layouts/application (107.3ms)
+Completed 200 OK in 117ms (Views: 114.3ms)
+
+
+Started DELETE "/users/5302e3db64796e0d93010000" for 127.0.0.1 at 2014-02-18 00:01:50 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "id"=>"5302e3db64796e0d93010000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5640ms
+  MOPED: 127.0.0.1:27017 DELETE       database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e3db64796e0d93010000')} flags=[:remove_first]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.6950ms
+Redirected to http://localhost:3000/logout
+Completed 302 Found in 6ms
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-02-18 00:01:50 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 00:01:50 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 10.9ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-18 00:01:53 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "session"=>{"email"=>"lucy"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"lucy"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7460ms
+Redirected to http://localhost:3000/login
+Completed 302 Found in 3ms
+
+
+Started GET "/login" for 127.0.0.1 at 2014-02-18 00:01:53 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-02-18 00:01:54 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (6.6ms)
+  Rendered users/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 20ms (Views: 19.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-02-18 00:01:58 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "user"=>{"first_name"=>"Lucy", "last_name"=>"He", "email"=>"lucyhe"}, "commit"=>"Create User"}
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=users documents=[{"_id"=>BSON::ObjectId('5302e94664796e0e20010000'), "first_name"=>"Lucy", "last_name"=>"He", "email"=>"lucyhe"}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.9640ms
+Redirected to http://localhost:3000/login
+Completed 302 Found in 5ms
+
+
+Started GET "/login" for 127.0.0.1 at 2014-02-18 00:01:58 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 11.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-18 00:02:00 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "session"=>{"email"=>"lucyhe"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"lucyhe"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8130ms
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 3ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-18 00:02:00 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e94664796e0e20010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5380ms
+  Rendered courses/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 13ms (Views: 10.2ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-02-18 00:02:03 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 00:02:03 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 8.8ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-18 00:02:06 -0500
+Processing by CoursesController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :require_user rendered or redirected
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-18 00:02:06 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 9.8ms)
+
+
+Started GET "/sessions/new" for 127.0.0.1 at 2014-02-18 00:02:09 -0500
+
+ActionController::RoutingError (No route matches [GET] "/sessions/new"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/lucyhe/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/lucyhe/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/lucyhe/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.7ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (22.8ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (93.1ms)
+
+
+Started GET "/sessions" for 127.0.0.1 at 2014-02-18 00:02:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/lucyhe/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/lucyhe/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/lucyhe/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.3ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (36.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-02-18 00:02:17 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 11.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2014-02-18 00:02:19 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (3.8ms)
+  Rendered users/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 22ms (Views: 20.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-02-18 00:02:24 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "user"=>{"first_name"=>"Lucy", "last_name"=>"He", "email"=>"lucyhe"}, "commit"=>"Create User"}
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=users documents=[{"_id"=>BSON::ObjectId('5302e96064796e0e20020000'), "first_name"=>"Lucy", "last_name"=>"He", "email"=>"lucyhe"}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.8110ms
+Redirected to http://localhost:3000/login
+Completed 302 Found in 4ms
+
+
+Started GET "/login" for 127.0.0.1 at 2014-02-18 00:02:24 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-18 00:02:26 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "session"=>{"email"=>"lucyhe"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"lucyhe"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8510ms
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 3ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-18 00:02:26 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e94664796e0e20010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5690ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7960ms
+  Rendered courses/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 14ms (Views: 12.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-18 00:02:30 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e94664796e0e20010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.1640ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5340ms
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 15ms (Views: 11.6ms)
+
+
+Started DELETE "/users/5302e96064796e0e20020000" for 127.0.0.1 at 2014-02-18 00:02:31 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T1Nc0WazTMjOWx+kEqzzTkv57W//m2vQ8vhlgHZz9fg=", "id"=>"5302e96064796e0e20020000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e94664796e0e20010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6560ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e96064796e0e20020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5320ms
+  MOPED: 127.0.0.1:27017 DELETE       database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e96064796e0e20020000')} flags=[:remove_first]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 1.3870ms
+Redirected to http://localhost:3000/users
+Completed 302 Found in 7ms
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-18 00:02:31 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e94664796e0e20010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7570ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6430ms
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 14ms (Views: 11.2ms)
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 2.4500ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=users documents=[{"_id"=>BSON::ObjectId('5303ff8164796e0621000000'), "first_name"=>"lucy", "last_name"=>"h", "email"=>"ldh"}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 64.3010ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9210ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (122.9ms)
+Completed 200 OK in 553ms (Views: 474.7ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-24 23:04:01 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-24 23:04:02 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-24 23:04:02 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-24 23:04:04 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"whyr4/RD3A40S+USNgRra5Zv6hRW0KZoa249vJS81WM=", "session"=>{"email"=>"ldh"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 61.8460ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"ldh"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 247.0920ms
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 378ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-24 23:04:05 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6200ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 51.9020ms
+  Rendered courses/index.html.erb within layouts/application (58.2ms)
+Completed 200 OK in 110ms (Views: 70.6ms)
+
+
+Started GET "/courses/new" for 127.0.0.1 at 2014-02-24 23:04:23 -0500
+Processing by CoursesController#new as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6430ms
+  Rendered courses/_form.html.erb (52.7ms)
+  Rendered courses/new.html.erb within layouts/application (81.3ms)
+Completed 200 OK in 127ms (Views: 124.0ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-24 23:05:49 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6090ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9100ms
+  Rendered courses/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 44ms (Views: 39.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-24 23:05:53 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8080ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6510ms
+  Rendered users/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 37ms (Views: 34.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 8.6140ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3420ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5610ms
+  Rendered users/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 54ms (Views: 27.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-24 23:06:53 -0500
+
+
+Started GET "/users/5303ff8164796e0621000000" for 127.0.0.1 at 2014-02-24 23:06:59 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5303ff8164796e0621000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5840ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4310ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5310ms
+  Rendered users/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 78ms (Views: 72.6ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-24 23:07:01 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6740ms
+  Rendered users/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 34ms (Views: 31.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-24 23:11:43 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5340ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3380ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8370ms
+  Rendered users/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 2279ms (Views: 2244.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:46 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (5.6ms)
+  Rendered users/new.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 52ms (Views: 49.9ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:47 -0500
+
+
+Started GET "/store/new" for 127.0.0.1 at 2014-02-24 23:11:53 -0500
+
+ActionController::RoutingError (No route matches [GET] "/store/new"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/lucyhe/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/lucyhe/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/lucyhe/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.3ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.3ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (56.8ms)
+
+
+Started GET "/stores/new" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+Processing by StoresController#new as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.9440ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4380ms
+  Rendered stores/_form.html.erb (4.5ms)
+  Rendered stores/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 39ms (Views: 17.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-24 23:11:56 -0500
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 148.6940ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=stores documents=[{"_id"=>BSON::ObjectId('530c190b64796e12fb000000'), "name"=>"Macy's", "url"=>"http://www.macys.com", "shipping_min"=>99.0}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 2742.4930ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6190ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=stores documents=[{"_id"=>BSON::ObjectId('530c1ad364796e12fb010000'), "name"=>"J.Crew", "url"=>"http://www.jcrew.com", "shipping_min"=>150.0}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.8360ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=stores documents=[{"_id"=>BSON::ObjectId('530c1b0f64796e12fb020000'), "name"=>"DSW", "url"=>"http://www.dsw.com", "shipping_min"=>35.0}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 1.1320ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8550ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"user_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 19.0990ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=items documents=[{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000'), "name"=>"Steve Madden Sandal", "url"=>"http://www.dsw.com/shoe/steve+madden+grover+flat+sandal?prodId=295372", "price"=>29.95}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 183.5370ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5930ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=wishlists documents=[{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000'), "want_by"=>2014-02-26 00:00:00 UTC, "total_cost"=>29.95, "user_id"=>BSON::ObjectId('530c1c5164796e12fb040000')}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 38.7420ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=users documents=[{"_id"=>BSON::ObjectId('530c1c5164796e12fb040000'), "first_name"=>"Lucy", "last_name"=>"He", "email"=>"lh2574@columbia.edu", "building"=>"Schapiro"}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 1.1640ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 21.2240ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>1} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 66.0890ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 62.9510ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 29.6810ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=project_development command={:count=>"users", :query=>{}} runtime: 17.2730ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7860ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 1.2060ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9340ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8390ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=items selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3280ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"_id"=>BSON::ObjectId('530c1b0f64796e12fb020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8760ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"$query"=>{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7150ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"_id"=>BSON::ObjectId('530c1b0f64796e12fb020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8670ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8870ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"$query"=>{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.5960ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7830ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"user_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 19.4610ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.5130ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=items selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7130ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=items selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7440ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"_id"=>BSON::ObjectId('530c1b0f64796e12fb020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8680ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"$query"=>{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6290ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"$query"=>{"_id"=>BSON::ObjectId('530c1b0f64796e12fb020000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6720ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8760ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5930ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"user_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9510ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6900ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"user_id"=>BSON::ObjectId('530c26d464796e146c000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"$query"=>{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6980ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"$query"=>{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.6620ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6450ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"$query"=>{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.4830ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"$query"=>{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7410ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7160ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"$query"=>{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.8950ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"$query"=>{"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.7200ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.4740ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=items selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4270ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=items selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9070ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"_id"=>BSON::ObjectId('530c1b0f64796e12fb020000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8250ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7820ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5230ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"user_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8660ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7670ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=items selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8070ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=project_development collection=wishlists selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} update={"$set"=>{"store_id"=>BSON::ObjectId('530c1b0f64796e12fb020000')}} flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 31.7760ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=project_development collection=items selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} update={"$set"=>{"store_id"=>BSON::ObjectId('530c1b0f64796e12fb020000')}} flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 1.2070ms
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-25 01:19:07 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 17.4830ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5710ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7980ms
+  Rendered users/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 522ms (Views: 409.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:08 -0500
+
+
+Started DELETE "/users/5303ff8164796e0621000000" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"whyr4/RD3A40S+USNgRra5Zv6hRW0KZoa249vJS81WM=", "id"=>"5303ff8164796e0621000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6200ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3430ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6320ms
+  MOPED: 127.0.0.1:27017 DELETE       database=project_development collection=users selector={"_id"=>BSON::ObjectId('5303ff8164796e0621000000')} flags=[:remove_first]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.7300ms
+Redirected to http://localhost:3000/logout
+Completed 302 Found in 8ms
+
+
+Started GET "/logout" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (114.0ms)
+Completed 200 OK in 173ms (Views: 172.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:13 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"whyr4/RD3A40S+USNgRra5Zv6hRW0KZoa249vJS81WM=", "session"=>{"email"=>"lh2574@columbia.edu"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"lh2574@columbia.edu"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 0.9350ms
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 4ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5440ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 40.7770ms
+  Rendered courses/index.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 111ms (Views: 71.7ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:19 -0500
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-25 01:19:21 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.7350ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6300ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6570ms
+  Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 18ms (Views: 13.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:22 -0500
+
+
+Started DELETE "/users/5302e94664796e0e20010000" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"whyr4/RD3A40S+USNgRra5Zv6hRW0KZoa249vJS81WM=", "id"=>"5302e94664796e0e20010000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5980ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e94664796e0e20010000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5180ms
+  MOPED: 127.0.0.1:27017 DELETE       database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302e94664796e0e20010000')} flags=[:remove_first]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.7450ms
+Redirected to http://localhost:3000/users
+Completed 302 Found in 6ms
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7050ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5140ms
+  Rendered users/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 18ms (Views: 15.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:24 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:25 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:25 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:25 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:25 -0500
+
+
+Started DELETE "/users/5302dd2964796e0cad030000" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"whyr4/RD3A40S+USNgRra5Zv6hRW0KZoa249vJS81WM=", "id"=>"5302dd2964796e0cad030000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8180ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6800ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302dd2964796e0cad030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6720ms
+  MOPED: 127.0.0.1:27017 DELETE       database=project_development collection=users selector={"_id"=>BSON::ObjectId('5302dd2964796e0cad030000')} flags=[:remove_first]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.8100ms
+Redirected to http://localhost:3000/users
+Completed 302 Found in 17ms
+
+
+Started GET "/users" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6690ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6270ms
+  Rendered users/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 18ms (Views: 15.8ms)
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:26 -0500
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-02-25 01:19:28 -0500
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (50.8ms)
+  Rendered users/new.html.erb within layouts/application (236.7ms)
+Completed 200 OK in 406ms (Views: 404.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"whyr4/RD3A40S+USNgRra5Zv6hRW0KZoa249vJS81WM=", "user"=>{"first_name"=>"Judy", "last_name"=>"Bloom", "email"=>"jb8481@columbia.edu"}, "commit"=>"Create User"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5220ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=users documents=[{"_id"=>BSON::ObjectId('530c360f64796e154e000000'), "first_name"=>"Judy", "last_name"=>"Bloom", "email"=>"jb8481@columbia.edu"}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.5020ms
+Redirected to http://localhost:3000/users/530c360f64796e154e000000
+Completed 302 Found in 63ms
+
+
+Started GET "/users/530c360f64796e154e000000" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"530c360f64796e154e000000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c360f64796e154e000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3510ms
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 44ms (Views: 40.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59 -0500
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6220ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c360f64796e154e000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4860ms
+  MOPED: 127.0.0.1:27017 UPDATE       database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c360f64796e154e000000')} update={"$set"=>{"building"=>"Schapiro"}} flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 1.2140ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"_id"=>BSON::ObjectId('530c190b64796e12fb000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7560ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=items documents=[{"_id"=>BSON::ObjectId('530c36e464796e1524010000'), "store_id"=>BSON::ObjectId('530c190b64796e12fb000000'), "name"=>"GUESS Lace Dress", "url"=>"http://www1.macys.com/shop/product/guess-lace-dress?ID=1166413", "price"=>40.99}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.9870ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=items selector={"_id"=>BSON::ObjectId('530c363f64796e1524000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6730ms
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.8820ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=items documents=[{"_id"=>BSON::ObjectId('530c392064796e1524020000'), "store_id"=>BSON::ObjectId('530c190b64796e12fb000000'), "name"=>"INC Print Scarf", "url"=>"http://www1.macys.com/shop/product/inc-international-concepts-ikat-print-scarf?ID=1186453", "price"=>21.99}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 0.8520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"user_id"=>BSON::ObjectId('530c360f64796e154e000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9140ms
+  MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=wishlists documents=[{"_id"=>BSON::ObjectId('530c363f64796e1524000000'), "user_id"=>BSON::ObjectId('530c360f64796e154e000000'), "store_id"=>BSON::ObjectId('530c190b64796e12fb000000'), "want_by"=>2014-02-26 00:00:00 UTC, "total_cost"=>62.98}] flags=[]
+                         COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 1.1230ms
