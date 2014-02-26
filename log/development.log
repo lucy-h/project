@@ -16235,3 +16235,571 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:19:59
   MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"user_id"=>BSON::ObjectId('530c360f64796e154e000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9140ms
   MOPED: 127.0.0.1:27017 INSERT       database=project_development collection=wishlists documents=[{"_id"=>BSON::ObjectId('530c363f64796e1524000000'), "user_id"=>BSON::ObjectId('530c360f64796e154e000000'), "store_id"=>BSON::ObjectId('530c190b64796e12fb000000'), "want_by"=>2014-02-26 00:00:00 UTC, "total_cost"=>62.98}] flags=[]
                          COMMAND      database=project_development command={:getlasterror=>1, :w=>1} runtime: 1.1230ms
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-02-25 01:55:22 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 37.4310ms
+  MOPED: Retrying connection attempt 1 more time(s). runtime: n/a
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 20.0590ms
+Completed 500 Internal Server Error in 505ms
+
+Moped::Errors::ConnectionFailure (Could not connect to a primary node for replica set #<Moped::Cluster:2175337300 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+  app/controllers/application_controller.rb:9:in `current_user'
+  app/controllers/application_controller.rb:15:in `require_user'
+
+
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (17.3ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (106.0ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-02-25 01:55:23 -0500
+Processing by UsersController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2880ms
+  MOPED: Retrying connection attempt 1 more time(s). runtime: n/a
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 22.8880ms
+Completed 500 Internal Server Error in 278ms
+
+Moped::Errors::ConnectionFailure (Could not connect to a primary node for replica set #<Moped::Cluster:2170029140 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+  app/controllers/application_controller.rb:9:in `current_user'
+  app/controllers/application_controller.rb:15:in `require_user'
+
+
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.1ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2014-02-25 01:55:29 -0500
+Processing by UsersController#index as HTML
+  MOPED: Retrying connection attempt 1 more time(s). runtime: n/a
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.0590ms
+Completed 500 Internal Server Error in 254ms
+
+Moped::Errors::ConnectionFailure (Could not connect to a primary node for replica set #<Moped::Cluster:2170029140 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+  app/controllers/application_controller.rb:9:in `current_user'
+  app/controllers/application_controller.rb:15:in `require_user'
+
+
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (61.3ms)
+Completed 200 OK in 155ms (Views: 141.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:33 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-25 01:55:39 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"whyr4/RD3A40S+USNgRra5Zv6hRW0KZoa249vJS81WM=", "session"=>{"email"=>"lh2574@columbia.edu"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.2980ms
+  MOPED: Retrying connection attempt 1 more time(s). runtime: n/a
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.9430ms
+Completed 500 Internal Server Error in 284ms
+
+Moped::Errors::ConnectionFailure (Could not connect to a primary node for replica set #<Moped::Cluster:2161468700 @seeds=[<Moped::Node resolved_address="127.0.0.1:27017">]>):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.8ms)
+  Rendered /Users/lucyhe/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 12ms (Views: 11.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:53 -0500
+
+
+Started POST "/login" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"whyr4/RD3A40S+USNgRra5Zv6hRW0KZoa249vJS81WM=", "session"=>{"email"=>"lh2574@columbia.edu"}, "commit"=>"Log in"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 23.0380ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"$query"=>{"email"=>"lh2574@columbia.edu"}, "$orderby"=>{:_id=>1}} flags=[] limit=-1 skip=0 batch_size=nil fields=nil runtime: 2.1000ms
+Redirected to http://localhost:3000/courses
+Completed 302 Found in 28ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+Processing by CoursesController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5170ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=courses selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9090ms
+  Rendered courses/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 210ms (Views: 42.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:55:59 -0500
+
+
+Started GET "/wishlists" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+Processing by WishlistsController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.5730ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3520ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.9350ms
+  Rendered wishlists/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 28ms (Views: 15.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:36 -0500
+
+
+Started GET "/wishlists/530c1b8e64796e12fb030000" for 127.0.0.1 at 2014-02-25 01:57:46 -0500
+Processing by WishlistsController#show as HTML
+  Parameters: {"id"=>"530c1b8e64796e12fb030000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6160ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4250ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4900ms
+  Rendered wishlists/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 17ms (Views: 11.1ms)
+
+
+Started GET "/wishlists" for 127.0.0.1 at 2014-02-25 01:57:48 -0500
+Processing by WishlistsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6960ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7200ms
+  Rendered wishlists/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 69ms (Views: 66.7ms)
+
+
+Started GET "/wishlists/530c1b8e64796e12fb030000/edit" for 127.0.0.1 at 2014-02-25 01:57:50 -0500
+Processing by WishlistsController#edit as HTML
+  Parameters: {"id"=>"530c1b8e64796e12fb030000"}
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6470ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={"_id"=>BSON::ObjectId('530c1b8e64796e12fb030000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 7.5800ms
+  Rendered wishlists/_form.html.erb (162.3ms)
+  Rendered wishlists/edit.html.erb within layouts/application (188.5ms)
+Completed 200 OK in 231ms (Views: 199.7ms)
+
+
+Started GET "/wishlists" for 127.0.0.1 at 2014-02-25 01:57:54 -0500
+Processing by WishlistsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5730ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=wishlists selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6500ms
+  Rendered wishlists/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 17ms (Views: 13.7ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+Processing by ItemsController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.8040ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=items selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6080ms
+  Rendered items/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 116ms (Views: 45.9ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:57:56 -0500
+
+
+Started GET "/stores" for 127.0.0.1 at 2014-02-25 01:58:09 -0500
+Processing by StoresController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 0.6620ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.4190ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.5530ms
+  Rendered stores/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 35ms (Views: 13.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 01:58:09 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 01:58:09 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 01:58:09 -0500
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 01:58:09 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 01:58:10 -0500
+
+
+Started GET "/stores" for 127.0.0.1 at 2014-02-25 03:20:43 -0500
+Processing by StoresController#index as HTML
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 18.2070ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 111.3100ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 7.7290ms
+  Rendered stores/index.html.erb within layouts/application (121.3ms)
+Completed 200 OK in 563ms (Views: 322.3ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2014-02-25 03:20:44 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-25 03:20:44 -0500
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-02-25 03:20:44 -0500
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2014-02-25 03:20:44 -0500
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-02-25 03:20:44 -0500
+
+
+Started GET "/assets/stores.css?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/wishlists.css?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/stores.js?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/wishlists.js?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-25 03:20:45 -0500
+
+
+Started GET "/stores/530c190b64796e12fb000000/edit" for 127.0.0.1 at 2014-02-25 03:20:47 -0500
+Processing by StoresController#edit as HTML
+  Parameters: {"id"=>"530c190b64796e12fb000000"}
+  MOPED: 127.0.0.1:27017 COMMAND      database=admin command={:ismaster=>1} runtime: 1.3310ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.3200ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={"_id"=>BSON::ObjectId('530c190b64796e12fb000000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 16.6250ms
+  Rendered stores/_form.html.erb (41.6ms)
+  Rendered stores/edit.html.erb within layouts/application (97.9ms)
+Completed 200 OK in 218ms (Views: 169.8ms)
+
+
+Started GET "/stores" for 127.0.0.1 at 2014-02-25 03:20:50 -0500
+Processing by StoresController#index as HTML
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=users selector={"_id"=>BSON::ObjectId('530c1c5164796e12fb040000')} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.7510ms
+  MOPED: 127.0.0.1:27017 QUERY        database=project_development collection=stores selector={} flags=[] limit=0 skip=0 batch_size=nil fields=nil runtime: 0.6850ms
+  Rendered stores/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 18ms (Views: 15.3ms)

@@ -7,35 +7,40 @@ For my project, I'd like to create a platform for students living in the same do
 
 Models
 
-1) User
-Attributes
-first_name:string
-last_name:string
-password:string
-uni:string
-building:string
-has_many :wishlists
+1) 
+User
+	has_many :wishlists
+	
+	first_name:string
+	last_name:string
+	email:string
+	building:string // building where the student lives
+
+Users are those who will use the application. They can create wishlists of items they want from different stores. These wishlists will be made public for others to see. If someone in their dorm wishes to order things from the same store/website, they can aggregate their orders to save on shipping.
 
 2) Wishlist
-Attributes
-want_by:date
-total_cost:float
-has_many :items
-has_one :store
-belongs_to :user
+	belongs_to :user
+	belongs_to :store
+	has_many :items
+	
+	want_by:date
+	total_cost:float
+
+A wishlist is a list of items from a single store that users want to by. The list also has a "want by" date that states the latest day that a user would want to buy the things on this wishlist. Essentially, the "want by" date is an expiration date for the wishlist.
 
 3) Store
-Attributes
-name:string
-url:string
-shipping_minimum:float
+	name:string
+	url:string
+	shipping_minimum:float // minimum amount spent to get free shipping, or to minimize shipping costs
+	shipping_cost:float // shipping cost for an order costing at least the shipping minimum (usually $0, but sometimes a small fee)
+A store is where users can buy items from. Since this application is meant for online shopping, the stores must have online shopping options.
 
 4) Item
-Attributes
-name:string
-url:string
-price:float
-has_one: store
+	belongs_to: store
 
+	name:string
+	url:string
+	price:float
+An item in a store. An item belongs to a single store. The URL links to the item on the store's website.
 
 
