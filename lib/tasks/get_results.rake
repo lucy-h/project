@@ -1,3 +1,5 @@
+# Run this task with:
+# rake sat_results:import
 namespace :sat_results do
 	desc 'Import SAT results by school into database'
 	task :import => :environment do
@@ -11,13 +13,6 @@ namespace :sat_results do
 			:math => row['Mathematics Mean'],
 			:writing => row['Writing Mean'])
 		  r.save!
-		  #Car.create(:make => row['Make'], :model => row['Model'], :year => row['Year'])
-
-		#csv_text = File.read('sat.csv')
-		#csv = CSV.parse(csv_text, :headers => true)
-		#csv.each do |row|
-		 # print row
-
 		end
 		puts "Finished!"
 	end
