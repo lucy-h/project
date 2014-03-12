@@ -7,4 +7,7 @@ class User
   field :last_name, type: String
   field :email, type: String
   field :building, type: String
+
+  validates :email, :presence => true
+  validates :building, :presence => true
 end
