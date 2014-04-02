@@ -43,4 +43,5 @@ A store is where users can buy items from. Since this application is meant for o
 	price:float
 An item in a store. An item belongs to a single store. The URL links to the item on the store's website.
 
-
+--------------------------
+Ruby on Rails, Spring 2014
