@@ -1,6 +1,4 @@
-<h1><%= @current_user.first_name %>'s wishlists</h1>
-
-
+<h1>All wishlists</h1>
 
 <table>
   <thead>
@@ -17,21 +15,16 @@
 
   <tbody>
     <% @wishlists.each do |wishlist| %>
-      <% if @current_user.email == wishlist.user.email %>
+      
         <tr>
           <td><%= wishlist.store.name %></td>
           <td><%= wishlist.want_by %></td>
           <td><%= wishlist.total_cost %></td>
           <td><%= '%.2f' % (wishlist.store.shipping_min - wishlist.total_cost) %></td>
-          
+          <td>Email <a href="mailto:<%= wishlist.user.email%>?Subject=Let's%20share%20an%20order!"><%= wishlist.user.first_name %></a>!</td>
           <td><%= link_to 'Show', wishlist %></td>
-          <td><%= link_to 'Edit', edit_wishlist_path(wishlist) %></td>
-          <td><%= link_to 'Destroy', wishlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          <% wishlist.items.each do |item| %>
-            <td><%= item.name %></td>
-          <% end %>  
         </tr>
-      <% end %>  
+      
     <% end %>
   </tbody>
 </table>

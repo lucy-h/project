@@ -7,7 +7,8 @@ class User
   field :last_name, type: String
   field :email, type: String
   field :building, type: String
-
+  field :role, type: String, default: 'user'
+  
   validates :email, :presence => true
   validates :building, :presence => true
 end

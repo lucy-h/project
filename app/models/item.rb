@@ -9,5 +9,4 @@ class Item
 
   validates :url, :presence => true
   validates :container, :presence => true
-  validates_associated :container
 end
