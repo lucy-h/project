@@ -1,6 +1,8 @@
-<h1>Editing wishlist</h1>
+<h1><%= @wishlist.store.name %> wishlist</h1>
 
 <%= render 'form' %>
+<% session[:wishlist_id] = @wishlist.id %>
+<%= link_to 'Add an item', new_item_path %>
 
 <%= link_to 'Show', @wishlist %> |
 <%= link_to 'Back', wishlists_path %>

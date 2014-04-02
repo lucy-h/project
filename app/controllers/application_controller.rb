@@ -15,6 +15,13 @@ class ApplicationController < ActionController::Base
     if current_user
       return true
     end
-    redirect_to root_url
+    redirect_to login_url
   end
+
+  def admin_only
+    if @current_user.role != "admin"
+      redirect_to root_url
+    end
+  end
+
 end

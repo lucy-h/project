@@ -24,10 +24,20 @@ class ItemsController < ApplicationController
   # POST /items
   # POST /items.json
   def create
-    @item = Item.new(item_params)
+    @wishlist = Wishlist.find(session[:wishlist_id])
+    container_type = 'Store'
+    container_id = @wishlist.store.id
+
+    params[:item].delete :container
+    item = Item.new(item_params)
+    item.container_type = container_type
+    item.container_id = container_id
+    @item = item
 
     respond_to do |format|
       if @item.save
+        @wishlist.items << @item
+        @wishlist.save
         format.html { redirect_to @item, notice: 'Item was successfully created.' }
         format.json { render action: 'show', status: :created, location: @item }
       else
@@ -69,6 +79,6 @@ class ItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params
-      params.require(:item).permit(:name, :url, :price)
+      params.require(:item).permit(:name, :url, :price, :container)
     end
 end

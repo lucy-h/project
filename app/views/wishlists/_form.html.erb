@@ -10,15 +10,19 @@
       </ul>
     </div>
   <% end %>
+  
 
   <div class="field">
     <%= f.label :want_by %><br>
     <%= f.date_select :want_by %>
   </div>
-  <div class="field">
-    <%= f.label :total_cost %><br>
-    <%= f.text_field :total_cost %>
+  <% if action_name == 'new' %>
+    <div class="field">
+    <%= f.label :store %><br>
+    <%= f.collection_select :store, Store.all, :id, :name %>
+    <td><%= link_to 'Add a new store', new_store_path %></td>
   </div>
+  <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>

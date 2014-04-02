@@ -24,7 +24,19 @@ class WishlistsController < ApplicationController
   # POST /wishlists
   # POST /wishlists.json
   def create
-    @wishlist = Wishlist.new(wishlist_params)
+    d = Date.civil(params[:wishlist]['want_by(1i)'].to_i, params[:wishlist]['want_by(2i)'].to_i, params[:wishlist]['want_by(3i)'].to_i)
+    params[:wishlist].delete 'want_by(1i)'
+    params[:wishlist].delete 'want_by(2i)'
+    params[:wishlist].delete 'want_by(3i)'
+    wishlist = Wishlist.new
+    wishlist.want_by = d
+    wishlist.total_cost = 0
+    wishlist.store_id = params[:wishlist][:store]
+
+    @current_user = User.find(session[:user_id])
+    wishlist.user_id = @current_user.id
+
+    @wishlist = wishlist
 
     respond_to do |format|
       if @wishlist.save
@@ -51,6 +63,10 @@ class WishlistsController < ApplicationController
     end
   end
 
+  def browse
+    @wishlists = Wishlist.all
+  end
+
   # DELETE /wishlists/1
   # DELETE /wishlists/1.json
   def destroy
@@ -69,6 +85,6 @@ class WishlistsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def wishlist_params
-      params.require(:wishlist).permit(:want_by, :total_cost)
+      params.require(:wishlist).permit(:want_by, :total_cost, :store)
     end
 end
