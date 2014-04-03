@@ -40,7 +40,7 @@ class WishlistsController < ApplicationController
 
     respond_to do |format|
       if @wishlist.save
-        format.html { redirect_to @wishlist, notice: 'Wishlist was successfully created.' }
+        format.html { redirect_to wishlists_url, notice: 'Wishlist was successfully created.' }
         format.json { render action: 'show', status: :created, location: @wishlist }
       else
         format.html { render action: 'new' }

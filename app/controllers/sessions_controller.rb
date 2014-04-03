@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email])
     if user
       session[:user_id] = user.id
-      redirect_to wishlists_path
+      redirect_to wishlists_path, notice: "Welcome back!"
     else
 	  redirect_to login_path , notice: "Account not found."
     end  

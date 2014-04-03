@@ -20,7 +20,7 @@
     <div class="field">
     <%= f.label :store %><br>
     <%= f.collection_select :store, Store.all, :id, :name %>
-    <td><%= link_to 'Add a new store', new_store_path %></td>
+    <td><%= link_to 'Add a new store', new_store_path, :class => 'btn btn-mini' %></td>
   </div>
   <% end %>
   <div class="actions">

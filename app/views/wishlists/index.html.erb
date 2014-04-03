@@ -1,14 +1,22 @@
-<h1><%= @current_user.first_name %>'s wishlists</h1>
-
-
+<p id="notice"><%= notice %></p>
 
 <table>
+  <tbody>
+    <tr>
+      <td>
+
+<div class="page-header">
+  <h1><%= @current_user.first_name %>'s wishlists</h1>
+</div>
+
+
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Store name</th>
-      <th>Want by</th>
-      <th>Total cost</th>
-      <th>Amount short</th>
+      <th>Store</th>
+      <th>Order By</th>
+      <th>Total Price</th>
+      <th>Amount Required</th>
       <th></th>
       <th></th>
       <th></th>
@@ -24,12 +32,13 @@
           <td><%= wishlist.total_cost %></td>
           <td><%= '%.2f' % (wishlist.store.shipping_min - wishlist.total_cost) %></td>
           
-          <td><%= link_to 'Show', wishlist %></td>
-          <td><%= link_to 'Edit', edit_wishlist_path(wishlist) %></td>
-          <td><%= link_to 'Destroy', wishlist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-          <% wishlist.items.each do |item| %>
-            <td><%= item.name %></td>
-          <% end %>  
+          <td><%= link_to 'View/Edit', edit_wishlist_path(wishlist), :class => 'btn btn-mini' %></td>
+          <td><%= link_to 'Delete', wishlist, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-mini'%></td>
+          <% if false %>
+            <% wishlist.items.each do |item| %>
+              <td><%= item.name %></td>
+            <% end %>  
+          <% end %>
         </tr>
       <% end %>  
     <% end %>
@@ -38,4 +47,15 @@
 
 <br>
 
-<%= link_to 'New Wishlist', new_wishlist_path %>
+<%= link_to 'New Wishlist', new_wishlist_path, :class => 'btn btn-primary' %>
+
+
+
+      </td>
+      <td><%= render 'wishlists/browse' %></td>
+    </tr>
+  </tbody>
+</table>
+
+
+

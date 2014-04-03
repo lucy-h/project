@@ -1,47 +1,77 @@
-== README
+== README for shopstop Application
 
 COMS W3101
 Lucy He (lh2574)
 
 For my project, I'd like to create a platform for students living in the same dorm to make online purchases together, in order to meet online shopping minimums. I have often found myself filling up an online shopping cart, or ordering too much take-out when I only intended to buy a few items. If students are slightly flexible in when they order items or food, they can combine their purchases with others to save on shipping! Intended for students to use with others living in the same dorm, the service is meant to be as convenient as possible for the users.
 
-Models
+Summary of features
 
-1) 
-User
-	has_many :wishlists
-	
-	first_name:string
-	last_name:string
-	email:string
-	building:string // building where the student lives
+Required
+1) Made change "Updated README.mdown" to brian-yama/columbiaRailsW3101
+2) Right now there is one admin, the user with email lh2574@columbia.edu. All others have default roles of "user".
+3) The dashboard is pointed to by root_url and also wishlists#index. It features the user's wishlists and all users' wishlists.
+
+Extra features
+- Option 3: _navbar.html.erb defines a navigation bar that is present on all pages. Clicking on shopstop will bring a user back to their dashboard. Clicking on their user name brings them to a page to edit their profile. They can also logout from the navigation bar. If the user is an admin, there are also the options to manage users or stores.
+- Option 7: users can add links to personal sites which will show up in their profile. Users can edit their profile by clicking on their name in the top navigation bar. They can click on a button to view their profile from that same page.
+- Option 8: I used the twitter-bootstrap-rails, less-rails and libv8 to add bootstrap style to my application.
+- Option 11: If an admin clicks "Manage Users" in their navigation bar, they are brought to a page with all the users. On this page, there is a button to email all users. By default, all user emails are added to the bcc field of an email.
+
+The general task flow for use of this application is:
+1) Sign up or login, and you'll be redirected to your dashboard.
+2) User is presented with their wishlists on the left (and the option to create a wishlist), and all wishlists on the right (owned by all users of the application).
+3) If a user sees that someone in their dorm wants to order from the same place, and their total would meet the shopping minimum, then they can email the other user.
+4) Or, user can edit existing or create new wishlists to be posted on the application.
+5) If they choose to edit a wishlist, they can add or remove items. (The store of a wishlist is fixed, as is the want by date.)
+6) If they choose to add a wishlist, they can choose to create a wishlist from an existing store, or they can add a new store.
+
+Admin's have some extra functionality:
+- In their top navigation bar, they can "Manage Users" or "Manage Stores"
+- These options allow admins to edit user and store information, or send an email to all users (button to do this is on the Manage Users page).
+
+Models
+1) User
+  
+  has_many :wishlists
+  field :first_name, type: String
+  field :last_name, type: String
+  field :email, type: String
+  field :github_url, type: String
+  field :website, type: String
+  field :building, type: String
+  field :role, type: String, default: 'user'
 
 Users are those who will use the application. They can create wishlists of items they want from different stores. These wishlists will be made public for others to see. If someone in their dorm wishes to order things from the same store/website, they can aggregate their orders to save on shipping.
 
 2) Wishlist
-	belongs_to :user
-	belongs_to :store
-	has_many :items
 	
-	want_by:date
-	total_cost:float
+  belongs_to :user
+  belongs_to :store
+  has_many :items, as: :container
+  field :want_by, type: Date
+  field :total_cost, type: Float, default: 0
 
-A wishlist is a list of items from a single store that users want to by. The list also has a "want by" date that states the latest day that a user would want to buy the things on this wishlist. Essentially, the "want by" date is an expiration date for the wishlist.
+A wishlist is a list of items from a single store that users want to buy. The list also has a "want by" date that states the latest day that a user would want to buy the things on this wishlist. Essentially, the "want by" date is an expiration date for the wishlist.
 
 3) Store
-	name:string
-	url:string
-	shipping_minimum:float // minimum amount spent to get free shipping, or to minimize shipping costs
-	shipping_cost:float // shipping cost for an order costing at least the shipping minimum (usually $0, but sometimes a small fee)
+  
+  has_many :items, as: :container
+  field :name, type: String
+  field :url, type: String
+  field :shipping_min, type: Float // minimum amount spent to get free shipping, or to minimize shipping costs
+  field :shipping_cost, type: Float
+
 A store is where users can buy items from. Since this application is meant for online shopping, the stores must have online shopping options.
 
 4) Item
-	belongs_to: store
 
-	name:string
-	url:string
-	price:float
-An item in a store. An item belongs to a single store. The URL links to the item on the store's website.
+  belongs_to :container, polymorphic: true
+  field :name, type: String
+  field :url, type: String
+  field :price, type: Float
+
+Each instance of an item is associated with a store or wishlist. The URL links to the item on the store's website.
 
 --------------------------
 Ruby on Rails, Spring 2014

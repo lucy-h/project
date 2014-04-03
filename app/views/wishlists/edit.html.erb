@@ -1,8 +1,52 @@
-<h1><%= @wishlist.store.name %> wishlist</h1>
+<div class="page-header">
+  <h1><%= @wishlist.store.name %> wishlist</h1>
+</div>
 
+
+<% if false %>
 <%= render 'form' %>
-<% session[:wishlist_id] = @wishlist.id %>
-<%= link_to 'Add an item', new_item_path %>
+<% end %>
 
-<%= link_to 'Show', @wishlist %> |
+<div>
+<p>
+  <strong>Want by:</strong>
+  <%= @wishlist.want_by %>
+</p>
+
+<p>
+  <strong>Total cost:</strong>
+  <%= @wishlist.total_cost %>
+</p>
+</div>
+
+
+<% session[:wishlist_id] = @wishlist.id %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+  	<% @wishlist.items.each do |item| %>
+		<tr>
+	      <td><a href="<%= item.url %>"><%= item.name %></a></td>
+	      <td><%= item.price %></td>
+	      <td><%= link_to 'Delete', item, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-mini' %></td>
+	    </tr>
+	<% end %>  
+
+	<tr>
+		<td>Total Price</td>
+		<td><%= @wishlist.total_cost %></td>
+	</tr>
+  </tbody>
+</table>
+
+<br><%= link_to 'Add an item', new_item_path, :class => 'btn btn-primary' %><br><br>
+
 <%= link_to 'Back', wishlists_path %>

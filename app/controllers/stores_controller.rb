@@ -1,5 +1,6 @@
 class StoresController < ApplicationController
   before_action :set_store, only: [:show, :edit, :update, :destroy]
+  before_filter :admin_only, :only => [:index, :destroy]
 
   # GET /stores
   # GET /stores.json
@@ -54,6 +55,10 @@ class StoresController < ApplicationController
   # DELETE /stores/1
   # DELETE /stores/1.json
   def destroy
+    while Wishlist.find_by(store_id: @store.id) != nil do
+      w = Wishlist.find_by(store_id: @store.id)
+      w.destroy
+    end
     @store.destroy
     respond_to do |format|
       format.html { redirect_to stores_url }

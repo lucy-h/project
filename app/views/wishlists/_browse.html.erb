@@ -1,0 +1,42 @@
+<div class="page-header">
+<h1>All wishlists</h1>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Store</th>
+      <th>Order By</th>
+      <th>Total Price</th>
+      <th>Order To</th>
+      <th>User</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wishlists.each do |wishlist| %>
+      
+        <tr>
+          <td><%= link_to wishlist.store.name, wishlist.store.url %></td>
+          <td><%= wishlist.want_by %></td>
+          <td><%= wishlist.total_cost %></td>
+          <% if false %><td><%= '%.2f' % (wishlist.store.shipping_min - wishlist.total_cost) %></td><%end%>
+          <% if wishlist.user.building != nil %>
+          <td><%= wishlist.user.building %></td>
+          <% else %>
+          <td>--</td>
+          <% end %>
+          <td><%= link_to wishlist.user.first_name, wishlist.user %></td>
+          <td><a class="btn btn-mini" href="mailto:<%= wishlist.user.email%>?Subject=Let's%20share%20an%20order!">Email <%= wishlist.user.first_name %></a>
+          </td>
+
+          <td><%= link_to 'View', wishlist, :class => 'btn btn-mini' %></td>
+        </tr>
+      
+    <% end %>
+  </tbody>
+</table>
+
+<br>

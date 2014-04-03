@@ -25,21 +25,26 @@ class ItemsController < ApplicationController
   # POST /items.json
   def create
     @wishlist = Wishlist.find(session[:wishlist_id])
-    container_type = 'Store'
-    container_id = @wishlist.store.id
-
     params[:item].delete :container
-    item = Item.new(item_params)
-    item.container_type = container_type
-    item.container_id = container_id
+    item = Item.find_by(url: params[:item][:url])
+    if !item
+      item = Item.new(item_params)
+      item.container_type = 'Store'
+      item.container_id = @wishlist.store.id
+    end
     @item = item
 
+    item2 = Item.new(item_params)
+    item2.container_type = 'Wishlist'
+    item2.container_id = @wishlist.id
+    @item2 = item2
+
     respond_to do |format|
-      if @item.save
-        @wishlist.items << @item
+      if @item.save && @item2.save
+        @wishlist.items << @item2
         @wishlist.save
-        format.html { redirect_to @item, notice: 'Item was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @item }
+        format.html { redirect_to edit_wishlist_url(@wishlist), notice: 'Item was successfully added to wishlist.' }
+        #format.json { render action: 'show', status: :created, location: @item }
       else
         format.html { render action: 'new' }
         format.json { render json: @item.errors, status: :unprocessable_entity }
@@ -64,9 +69,20 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.json
   def destroy
+    if @item.container_type == 'Wishlist'
+      @wishlist = Wishlist.find(@item.container_id)
+      @wishlist.items.delete_if{|o| o.id == @item.id}
+      @wishlist.save
+    elsif @item.container_type == 'Store'
+      @store = Store.find(@item.container_id)
+      @store.items.delete_if{|o| o.id == @item.id}
+      @store.save
+    end
+
     @item.destroy
     respond_to do |format|
-      format.html { redirect_to items_url }
+      @wishlist = Wishlist.find(session[:wishlist_id])
+      format.html { redirect_to edit_wishlist_url(@wishlist) }
       format.json { head :no_content }
     end
   end

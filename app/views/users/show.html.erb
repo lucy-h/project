@@ -1,19 +1,31 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
-</p>
+<table class="table">
+<tr>
+	<td style="width:100px;"><strong>First name</strong></td>
+	<td><%= @user.first_name %></td>
+</tr>
+<tr>
+	<td style="width:100px;"><strong>Last name</strong></td>
+	<td><%= @user.last_name %></td>
+</tr>
+<tr>
+	<td style="width:100px;"><strong>Email</strong></td>
+	<td><%= @user.email %></td>
+</tr>
+<tr>
+	<td style="width:100px;"><strong>Building</strong></td>
+	<td><%= @user.building %></td>
+</tr>
+<tr>
+	<td style="width:100px;"><strong>Github</strong></td>
+	<td><%= @user.github_url %></td>
+</tr>
+<tr>
+	<td style="width:100px;"><strong>Website</strong></td>
+	<td><%= @user.website %></td>
+</tr>
+<tr></tr>
+</table>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<%= link_to 'Back', root_url %>

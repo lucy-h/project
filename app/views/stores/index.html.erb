@@ -1,9 +1,11 @@
-<h1>Listing stores</h1>
+<div class="page-header">
+  <h1>All stores</h1>
+</div>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Store</th>
       <th>Url</th>
       <th>Shipping min</th>
       <th></th>
@@ -18,9 +20,8 @@
         <td><%= store.name %></td>
         <td><%= store.url %></td>
         <td><%= store.shipping_min %></td>
-        <td><%= link_to 'Show', store %></td>
-        <td><%= link_to 'Edit', edit_store_path(store) %></td>
-        <td><%= link_to 'Destroy', store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'View/Edit', edit_store_path(store), :class => 'btn btn-mini' %></td>
+        <td><%= link_to 'Delete', store, method: :delete, data: { confirm: 'Are you sure? All associated wishlists will also be deleted.' }, :class => 'btn btn-mini' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New Store', new_store_path %>
+<%= link_to 'New Store', new_store_path, :class => 'btn btn-primary' %>

@@ -1,14 +1,17 @@
-<h1>Listing users</h1>
+<div class="page-header">
+  <h1>All users</h1>
+</div>
 
-<table>
+<table class="table table-striped">
   <thead>
     <tr>
       <th>First name</th>
       <th>Last name</th>
       <th>Email</th>
-      <th></th>
-      <th></th>
-      <th></th>
+      <th>Building</th>
+      <th>Github</th>
+      <th>Website</th>
+      <th>Role</th>
     </tr>
   </thead>
 
@@ -18,9 +21,12 @@
         <td><%= user.first_name %></td>
         <td><%= user.last_name %></td>
         <td><%= user.email %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= user.building %></td>
+        <td><%= user.github_url %></td>
+        <td><%= user.website %></td>
+        <td><%= user.role %></td>
+        <td><%= link_to 'Edit', edit_user_path(user), :class => 'btn btn-mini' %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' }, :class => 'btn btn-mini' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +34,6 @@
 
 <br>
 
-<%= link_to 'New User', new_user_path %>
+<%= link_to 'New User', new_user_path, :class => 'btn btn-primary' %>
+<a class="btn btn-primary" href="mailto:<%= @current_user.email %>?Subject=Message%20from%20shopstop!&bcc=<% @users.each do |user| %>
+    <%= user.email %>,<% end %>">Email users</a>

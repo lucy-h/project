@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   skip_before_filter :require_user, :only => [:new, :create]
-  before_filter :admin_only, :only => [:index, :edit, :show, :destroy]
+  before_filter :admin_only, :only => [:index, :destroy]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
@@ -21,6 +21,10 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    @current_user = User.find(session[:user_id]) if session[:user_id]
+    if @user.id != @current_user.id && @current_user.role != "admin"
+      redirect_to root_url
+    end
   end
 
   # POST /users
@@ -46,7 +50,12 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        @current_user = User.find(session[:user_id]) if session[:user_id]
+        if @current_user.role != "admin"
+          format.html { redirect_to root_url }
+        else 
+          format.html { redirect_to users_url, notice: 'User was successfully updated.' }
+        end
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -58,6 +67,11 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+    while Wishlist.find_by(user_id: @user.id) != nil do
+      w = Wishlist.find_by(user_id: @user.id)
+      w.destroy
+    end
+
     if session[:user_id] == @user.id
       @user.destroy
       respond_to do |format|
@@ -80,6 +94,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :email)
+      params.require(:user).permit(:first_name, :last_name, :email, :github_url, :website, :building)
     end
 end

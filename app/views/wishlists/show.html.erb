@@ -10,5 +10,29 @@
   <%= @wishlist.total_cost %>
 </p>
 
-<%= link_to 'Edit', edit_wishlist_path(@wishlist) %> |
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+  	<% @wishlist.items.each do |item| %>
+		<tr>
+	      <td><a href="<%= item.url %>"><%= item.name %></a></td>
+	      <td><%= item.price %></td>
+	    </tr>
+	<% end %>  
+
+	<tr>
+		<td>Total Price</td>
+		<td><%= @wishlist.total_cost %></td>
+	</tr>
+  </tbody>
+</table>
+
 <%= link_to 'Back', wishlists_path %>
