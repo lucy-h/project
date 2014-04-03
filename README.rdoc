@@ -10,6 +10,7 @@ Summary of features
 Required
 1) Made change "Updated README.mdown" to brian-yama/columbiaRailsW3101
 2) Right now there is one admin, the user with email lh2574@columbia.edu. All others have default roles of "user".
+(Edit: Actually, I'm not sure the objects I have when I run it are uploaded to github. If it helps, users can only be made admin through the Rails console.)
 3) The dashboard is pointed to by root_url and also wishlists#index. It features the user's wishlists and all users' wishlists.
 
 Extra features
